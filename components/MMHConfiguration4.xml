@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<userconfig>
+     <user name="Nicolas"/>
+     <config name="FirstConfiguration"/>
+     <unknowdevices default="on"/>
+     <assigninstances mode="on"/>
+     <devices>
+          <device id="1" instance="0">
+               <consumes>
+               </consumes>
+               <produces>
+                    <event deviceID="2" id="1" instance="0"/>
+                    <event deviceID="11" id="20" instance="0"/>
+                    <event deviceID="13" id="20" instance="0"/>
+                    <event deviceID="14" id="20" instance="0"/>
+               </produces>
+          </device>
+          <device id="2" instance="0">
+               <consumes>
+                    <event deviceID="1" id="1" instance="0"/>
+               </consumes>
+               <produces>
+                    <event deviceID="11" id="20" instance="1"/>
+                    <event deviceID="13" id="20" instance="all"/>
+                    <event deviceID="14" id="20" instance="1"/>
+                    <event deviceID="12" id="21" instance="0"/>
+                    <event deviceID="14" id="21" instance="0"/>
+               </produces>
+          </device>	
+          <device id="3" instance="0">
+               <consumes>
+               </consumes>
+               <produces>
+                    <event deviceID="11" id="20" instance="0"/>
+                    <event deviceID="13" id="20" instance="0"/>
+                    <event deviceID="14" id="20" instance="0"/>
+               </produces>
+          </device>	
+          <device id="11" instance="0">
+               <consumes>
+                    <event deviceID="1" id="20" instance="0"/>
+                    <event deviceID="3" id="20" instance="0"/>
+               </consumes>
+               <produces>
+               </produces>
+          </device>
+          <device id="12" instance="0">
+               <consumes>
+                    <event deviceID="2" id="21" instance="0"/>
+                    <event deviceID="3" id="21" instance="0"/>
+               </consumes>
+               <produces>
+               </produces>
+          </device>		
+          <device id="14" instance="0">
+               <consumes>
+                    <event deviceID="1" id="20" instance="0"/>
+                    <event deviceID="3" id="20" instance="0"/>
+                    <event deviceID="2" id="21" instance="0"/>
+                    <event deviceID="3" id="21" instance="0"/>
+               </consumes>
+               <produces>
+               </produces>
+          </device>			  
+     </devices>
+</userconfig>
